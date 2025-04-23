@@ -6,7 +6,7 @@ import EditStudent from './pages/EditStudent';
 import Navbar from './components/Navbar';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://student-management-system-05sh.onrender.com';
 
 function App() {
   return (
