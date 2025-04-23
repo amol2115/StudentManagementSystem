@@ -14,6 +14,7 @@ const AddStudent = () => {
     e.preventDefault();
     try {
       await axios.post('/students', form);
+      alert('Student added successfully!');
       navigate('/');
     } catch (error) {
       console.error('Error adding student:', error);

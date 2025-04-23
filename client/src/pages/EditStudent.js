@@ -19,6 +19,7 @@ const EditStudent = () => {
     e.preventDefault();
     try {
       await axios.put(`/students/${id}`, form);
+      alert('Student updated successfully!');
       navigate('/');
     } catch (error) {
       console.error('Error updating student:', error);
